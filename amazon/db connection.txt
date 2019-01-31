@@ -1,0 +1,8 @@
+this is for the database connection
+
+import cx_Oracle
+con = cx_Oracle.connect('Dhiren/Dbhjpt1@127.0.0.1/xe')
+cursor = con.cursor()
+querystring = "select * from Parcels"
+cursor.execute(querystring)
+con.close()
